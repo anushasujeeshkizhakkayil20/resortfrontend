@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://resortserver-z2t9.onrender.com'
