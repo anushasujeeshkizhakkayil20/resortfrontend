@@ -58,10 +58,11 @@ function Booking1({bookingregister}) {
         //storedata
         sessionStorage.setItem("existingUser",JSON.stringify(result.data.existingUser))
         sessionStorage.setItem("token",result.data.token)
+  
         toast.success('Booking successfull')
-
+       
         setUserDatas({
-          username:"",email:"",phonenumber:""
+        username:"" ,email:"",phonenumber:""
         })
         setTimeout(()=>{
           navigate('/')

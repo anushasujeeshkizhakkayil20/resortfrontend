@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import{Link, useNavigate} from 'react-router-dom'
-import Dashboard from '../pages/Dashboard';
+
 
 function Header({dashboard}) {
   const navigate = useNavigate()
@@ -36,16 +36,7 @@ function Header({dashboard}) {
         
         </Nav.Link>
       </Nav>
-
-          <Nav>
-        
-          
-            <Link to={'/login'} style={{textDecoration:'none', color:'white'}}><Nav.Link eventKey={2} href="#memes">
-             LOGIN
-            </Nav.Link></Link>
-          </Nav>
-        
-        </Navbar.Collapse>
+    </Navbar.Collapse>
        {
         dashboard && 
         <button onClick={handleLogout} className='btn btn-warning'>Logout</button>
